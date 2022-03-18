@@ -1,2 +1,1 @@
-<<<<<<< HEAD
 # Intern for ChomCHOB
