@@ -2,14 +2,18 @@
 
 .App {
   /* text-align: center; */
-
+  /* background-color: #F0F0F0; */
   height: 1293px;
   width: 1366px;
-  left: -684px;
-  top: -647px;
+  /* height: 100%;
+  width: 100%; */
+  /* left: -684px;
+  top: -647px; */
+  left: 0px;
+  top: 0px;
   border-radius: 0px;
-  background: #F0F0F0;
-
+  /* background: #F0F0F0; */
+  /* background: black; */
 }
 
 /*END SET UP*/
@@ -24,17 +28,6 @@
   height: 40vmin;
   pointer-events: none;
 } */
-
-.App-header {
-  /* background-color: #f0f0f0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin); */
-  color: rgb(0, 0, 0);
-}
 
 /* .App-link {
   color: #61dafb;
@@ -54,12 +47,117 @@
   
 } */
 
-.rectangle{
+.rectangle1{
   position: absolute;
   height: 76px;
   width: 1366px;
+  /* width: 100%; */
   left: 0px;
   top: 0px;
   border-radius: 0px;
   background: #FF6F61;
+}
+
+
+/*///////////////   CONTEXT   //////////////////*/
+.Context {
+  background: #F0F0F0;
+  height: 1293px;
+  width: 1366px;
+  left: -647px;
+  top: -684px;
+  /* position: relative; */
+  /* background-color: #F0F0F0; */
+  /* min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); */
+}
+
+.Menu{
+  /* margin-right: 60px;
+  position: relative; */
+}
+
+b1 {
+  position: absolute;
+  height: 14px;
+  width: 41px;
+  left: 379px;
+  top: 31px;
+  color: #F9F9F9;
+}
+
+b2 {
+  position: absolute;
+  height: 14px;
+  width: 97px;
+  left: 480px;
+  top: 31px;
+  color: #F9F9F9;
+}
+
+b3 {
+  position: absolute;
+  height: 14px;
+  width: 53px;
+  left: 637px;
+  top: 31px;
+  color: #F9F9F9;
+}
+
+b4 {
+  position: absolute;
+  height: 14px;
+  width: 29px;
+  left: 750px;
+  top: 31px;
+  color: #F9F9F9;
+}
+
+b5 {
+  position: absolute;
+  height: 14px;
+  width: 23px;
+  left: 839px;
+  top: 31px;
+  color: #F9F9F9;
+}
+
+b6 {
+  position: absolute;
+  height: 14px;
+  width: 85px;
+  left: 922px;
+  top: 31px;
+  color: #F9F9F9;
+}
+
+/*///////////////   FOOTER   //////////////////*/
+/* .Footer{
+  
+} */
+
+.rectangle2{
+  position: absolute;
+  height: 54px;
+  width: 1366px;
+  /* width: 100%; */
+  left: 0px;
+  top: 1239px;
+  border-radius: 0px;
+  background: #1A586A;
+}
+
+a {
+  position: absolute;
+  height: 14px;
+  width: 272px;
+  left: 560px;
+  top: 20px;
+  color: #707070;
+  border: 1px;
+  border-color: #F5F5F5;
 }

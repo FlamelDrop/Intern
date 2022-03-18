@@ -6,28 +6,28 @@ function App() {
     <div className="App">
 
       <div className="Header">
-        <div className="rectangle">
-          
+        <div className="rectangle1">
+          <div className="Menu">
+            <b1>Home</b1>
+            <b2>New Products</b2>
+            <b3>Women</b3>
+            <b4>Men</b4>
+            <b5>Kid</b5>
+            <b6>Accessories</b6>
+          </div>
         </div>
       </div>
 
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
+      <div className="Context">
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        Products (-)
+      </div>
 
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        Learn React
-        </a> */}
-
-      </header>
+      <div className="Footer">
+        <div className="rectangle2">
+          <a>Copyright © 2021 ChomCHOB. All Rights Reserved.</a>
+        </div>
+      </div>
 
     </div>
   );
