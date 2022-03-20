@@ -198,6 +198,14 @@
   background: #FF6F61;
 }
 
+.Logo{
+  position: absolute;
+  width: 77px;
+  height: 36px;
+  left: 99px;
+  top: 20px;
+}
+
 /* .Menu{
 
 } */

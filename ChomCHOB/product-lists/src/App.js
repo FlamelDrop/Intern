@@ -7,6 +7,7 @@ function App() {
 
       <div className="Header">
         <div className="rectangle1">
+          <img src={logo} className="Logo"alt="logo"/>
           <div className="Menu">
             <b1>Home</b1>
             <b2>New Products</b2>
