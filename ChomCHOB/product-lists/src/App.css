@@ -1,4 +1,144 @@
 /*SET UP*/
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-Light.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-Light.woff) format('woff'),
+    url(./fonts/font/otf/Boon-Light.otf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+.boon-300 {
+  font-family: 'Boon';
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-LightItalic.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-LightItalic.woff) format('woff'),
+    url(./fonts/font/otf/Boon-LightItalic.otf) format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+.boon-300i {
+  font-family: 'Boon';
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-Regular.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-Regular.woff) format('woff'),
+    url(./fonts/font/otf/Boon-Regular.otf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+.boon-400 {
+  font-family: 'Boon';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-Italic.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-Italic.woff) format('woff'),
+    url(./fonts/font/otf/Boon-Italic.otf) format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+.boon-400i {
+  font-family: 'Boon';
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-Medium.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-Medium.woff) format('woff'),
+    url(./fonts/font/otf/Boon-Medium.otf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+.boon-500 {
+  font-family: 'Boon';
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-MediumItalic.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-MediumItalic.woff) format('woff'),
+    url(./fonts/font/otf/Boon-MediumItalic.otf) format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+.boon-500i {
+  font-family: 'Boon';
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-SemiBold.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-SemiBold.woff) format('woff'),
+    url(./fonts/font/otf/Boon-SemiBold.otf) format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+.boon-600 {
+  font-family: 'Boon';
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-SemiBoldItalic.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-SemiBoldItalic.woff) format('woff'),
+    url(./fonts/font/otf/Boon-SemiBoldItalic.otf) format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+.boon-600i {
+  font-family: 'Boon';
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-Bold.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-Bold.woff) format('woff'),
+    url(./fonts/font/otf/Boon-Bold.otf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+.boon-700 {
+  font-family: 'Boon';
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Boon';
+  src: url(./fonts/font/woff2-otf/Boon-BoldItalic.woff2) format('woff2'),
+    url(./fonts/font/woff-otf/Boon-BoldItalic.woff) format('woff'),
+    url(./fonts/font/otf/Boon-BoldItalic.otf) format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+.boon-700i {
+  font-family: 'Boon';
+  font-weight: 700;
+  font-style: italic;
+}
 
 .App {
   /* text-align: center; */
@@ -64,55 +204,97 @@
 
 b1 {
   position: absolute;
-  height: 14px;
   width: 41px;
+  height: 14px;
   left: 379px;
   top: 31px;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+
   color: #F9F9F9;
 }
 
 b2 {
   position: absolute;
-  height: 14px;
   width: 97px;
+  height: 14px;
   left: 480px;
   top: 31px;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+
   color: #F9F9F9;
 }
 
 b3 {
   position: absolute;
-  height: 14px;
   width: 53px;
+  height: 14px;
   left: 637px;
   top: 31px;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+
   color: #F9F9F9;
 }
 
 b4 {
   position: absolute;
-  height: 14px;
   width: 29px;
+  height: 14px;
   left: 750px;
   top: 31px;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+
   color: #F9F9F9;
 }
 
 b5 {
   position: absolute;
-  height: 14px;
   width: 23px;
+  height: 14px;
   left: 839px;
   top: 31px;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+
   color: #F9F9F9;
 }
 
 b6 {
   position: absolute;
-  height: 14px;
   width: 85px;
+  height: 14px;
   left: 922px;
   top: 31px;
+  
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+
   color: #F9F9F9;
 }
 
@@ -139,6 +321,13 @@ c {
   width: 95px;
   left: 100px;
   top: 126px;
+  
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+
   color: #484848;
 }
 
@@ -160,11 +349,24 @@ c {
 
 a {
   position: absolute;
-  height: 14px;
+  /* height: 14px;
   width: 272px;
   left: 560px;
-  top: 20px;
+  top: 20px; */
+  left: 41%;
+  right: 39.09%;
+  top: 37.04%;
+  bottom: 37.04%;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
   color: #707070;
+
   border: 1px;
   border-color: #F5F5F5;
+  box-sizing: border-box;
 }
