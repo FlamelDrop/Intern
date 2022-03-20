@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useEffect, useState, useRef, useCallback } from "react";
+import Product from "./Product"
 
 var click1=document.querySelectorAll("d");
 var preclick1;
@@ -40,20 +41,49 @@ for (var i=0;i<click1.length;i++){
 // ====
 // _id,name,image_url,price,review[0],review[1],brand_info[2]
 
+const URL = `https://cc-mock-api.herokuapp.com/product`;
+// let count = 0;
 
 function App() {
 
+  const [Data, DataSet] = useState([]);
   const [List, setList] = useState([{
-    // _id,name,image_url,price,review[0],review[1],brand_info[3]
-    
+    _id: "",
+    name: "",
+    image_url: "",
+    price: "",
+    review: "",
+    brand_info: "",
+    // review[0],review[1],brand_info[3]
   }]);
 
+  useEffect(() => {
+    async function fetchMyAPI() {
+      let res = await fetch(URL);
+      res = await res.json();
 
+      console.log('hello')
+      console.log(JSON.stringify(res))
 
+      const shList = List;
 
-
-
-
+      for (let i=0;i<res.length;i++){
+        shList[i] = {
+          _id: res[i]._id,
+          name: res[i].name,
+          image_url: res[i].image_url,
+          price: res[i].price,
+          review: res[i].review,
+          brand_info: res[i].brand_info,
+        };
+      }
+      console.log('shList' + shList)
+      setList(shList);
+      DataSet(JSON.stringify(res));
+    }
+    fetchMyAPI();
+  }, []);
+  
   return (
     <div className="App">
 
@@ -76,9 +106,11 @@ function App() {
       </div>
 
       <div className="Context">
-        <c>Products (-)</c>
-        <div className="card">
-          <e1>product 1</e1>
+        <c>Products ({List.length})</c>
+        <div className="list" href="https://www.chomchob.com/">
+          {List.map((product) => (
+            <Product key={product._id} product={product}></Product>
+          ))}
           
         </div>
       </div>

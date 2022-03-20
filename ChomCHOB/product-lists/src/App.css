@@ -155,33 +155,7 @@
   /* background: #F0F0F0; */
   /* background: black; */
 }
-
 /*END SET UP*/
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* .App-link {
-  color: #61dafb;
-} */
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 /*///////////////   HEADER   //////////////////*/
 /* .Header{
   
@@ -205,15 +179,16 @@
   left: 99px;
   top: 20px;
   cursor: pointer;
+  /* background: black; */
 }
 
 d {
-  position: fixed;
+  position: relative;
   width: 77px;
   height: 36px;
-  left: 95px;
-  top: 20px;
-  padding: 5px;
+  left: 0px;
+  top: -33px;
+  padding: 15px;
   font-family: 'Boon';
   font-style: normal;
   font-weight: 700;
@@ -339,14 +314,6 @@ b6 {
   width: 1366px;
   left: -647px;
   top: -684px;
-  /* position: relative; */
-  /* background-color: #F0F0F0; */
-  /* min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin); */
 }
 
 c {
@@ -365,18 +332,25 @@ c {
   color: #484848;
 }
 
+.list{
+  position: relative;
+  width: 1166px;
+  height: 975px;
+  left: 100px;
+  top: 164px;
+  /* background-color: black; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 25px;
+  column-gap: 22px;
+}
+
 .card{
-  position: absolute;
   width: 275px;
   height: 308px;
   left: 100px;
   top: 164px;
-  background: #1A586A;
 
-}
-
-e1 {
-  position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
@@ -384,8 +358,174 @@ e1 {
   
   background: #FCFCFC;
   border-radius: 15px;
-  
+  cursor: pointer;
 }
+.card:hover {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.card-pic {
+  height: 196px;
+  width: 275px;
+  border-radius: 15px;
+
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  object-fit: cover;
+  position: relative;
+}
+
+.card-logo {
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  left: 15px;
+  top: 6px;
+  right: 0px;
+  bottom: 0px;
+
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.classless {
+  position: absolute;
+  width: 77px;
+  height: 36px;
+
+  top: 20px;
+  left: 99px;
+  border-radius: 0px;
+  background-color: aqua;
+}
+
+.precard-name {
+  position: relative;
+  display: flex;
+  width: 194px;
+  height: 40px;
+
+  top: -38px;
+  left: 65px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 0px;
+  color: pink;
+}
+
+.card-name {
+  position: relative;
+  width: 194px;
+  height: 38px;
+
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #484848;
+  overflow: hidden;
+  overflow-wrap: inherit;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
+.card-pricetag {
+  position: relative;
+  display: flex;
+  width: 27px;
+  height: 14px;
+  top: -28px;
+  left: 65px;
+
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  
+  color: #939393;
+}
+
+.card-price {
+  position: relative;
+  width: 63px;
+  height: 18px;
+  top: -24px;
+  left: 65px;
+  
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  
+  display: flex;
+  align-items: center;
+  
+  color: #FF6F61;
+}
+
+.card-review {
+  position: relative;
+  width: 110px;
+  height: 14px;
+  top: -60px;
+  left: 150px;
+  
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  display: flex;
+  align-items: center;
+  
+  color: #939393;
+}
+
+.precard-rating {
+  position: relative;
+  display: flex;
+  width: 66px;
+  height: 12px;
+
+  top: -61px;
+  left: 149px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 0px;
+  color: pink;
+}
+
+.card-rating {
+  width: 66px;
+  height: 12px;
+  top: 274px;
+  left: 150px;
+  padding: 0.5px;
+}
+
+.rating {
+  height: 12px;
+  padding: 0.5px;
+}
+
 /*///////////////   FOOTER   //////////////////*/
 /* .Footer{
   
@@ -404,10 +544,6 @@ e1 {
 
 a {
   position: absolute;
-  /* height: 14px;
-  width: 272px;
-  left: 560px;
-  top: 20px; */
   left: 41%;
   right: 39.09%;
   top: 37.04%;
