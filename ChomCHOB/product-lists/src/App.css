@@ -204,7 +204,27 @@
   height: 36px;
   left: 99px;
   top: 20px;
+  cursor: pointer;
 }
+
+d {
+  position: fixed;
+  width: 77px;
+  height: 36px;
+  left: 95px;
+  top: 20px;
+  padding: 5px;
+  font-family: 'Boon';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  line-height: 0.7cm;
+  background-color: #FF6F61;
+  opacity: 0;
+  cursor: pointer;
+}
+d.show{opacity: 1;}
 
 /* .Menu{
 
@@ -224,6 +244,7 @@ b1 {
   line-height: 14px;
 
   color: #F9F9F9;
+  cursor: pointer;
 }
 
 b2 {
@@ -240,6 +261,7 @@ b2 {
   line-height: 14px;
 
   color: #F9F9F9;
+  cursor: pointer;
 }
 
 b3 {
@@ -256,6 +278,7 @@ b3 {
   line-height: 14px;
 
   color: #F9F9F9;
+  cursor: pointer;
 }
 
 b4 {
@@ -272,6 +295,7 @@ b4 {
   line-height: 14px;
 
   color: #F9F9F9;
+  cursor: pointer;
 }
 
 b5 {
@@ -288,6 +312,7 @@ b5 {
   line-height: 14px;
 
   color: #F9F9F9;
+  cursor: pointer;
 }
 
 b6 {
@@ -304,6 +329,7 @@ b6 {
   line-height: 14px;
 
   color: #F9F9F9;
+  cursor: pointer;
 }
 
 /*///////////////   CONTEXT   //////////////////*/
