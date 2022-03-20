@@ -365,6 +365,27 @@ c {
   color: #484848;
 }
 
+.card{
+  position: absolute;
+  width: 275px;
+  height: 308px;
+  left: 100px;
+  top: 164px;
+  background: #1A586A;
+
+}
+
+e1 {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  
+  background: #FCFCFC;
+  border-radius: 15px;
+  
+}
 /*///////////////   FOOTER   //////////////////*/
 /* .Footer{
   

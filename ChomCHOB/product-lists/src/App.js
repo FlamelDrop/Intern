@@ -19,6 +19,11 @@ for (var i=0;i<click1.length;i++){
   }
 }
 
+
+//_id name image_url description price review brand_info
+
+
+
 function App() {
   return (
     <div className="App">
@@ -42,9 +47,9 @@ function App() {
       </div>
 
       <div className="Context">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <c>Products (-)</c>
         <div className="card">
+          <e1>product 1</e1>
           
         </div>
       </div>
