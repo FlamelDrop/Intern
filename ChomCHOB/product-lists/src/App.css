@@ -544,10 +544,12 @@ c {
 
 a {
   position: absolute;
-  left: 41%;
-  right: 39.09%;
-  top: 37.04%;
-  bottom: 37.04%;
+  height: 14px;
+  width: 272px;
+  left: 560px;
+  top: 20px;
+  bottom: 20px;
+  right: 534px;
 
   font-family: 'Boon';
   font-style: normal;
@@ -555,9 +557,8 @@ a {
   font-size: 12px;
   line-height: 14px;
 
-  color: #707070;
-
-  border: 1px;
-  border-color: #F5F5F5;
-  box-sizing: border-box;
+  box-sizing: inherit;
+  -webkit-text-fill-color: #707070;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F5F5F5;
 }
