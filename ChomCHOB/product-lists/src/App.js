@@ -16,13 +16,14 @@ for (var i=0;i<click1.length;i++){
       preclick1.classList.remove("show");
       preclick1=this;
       classes.add("show");
-      // this.classList.toggle("show");
     }
   }
 }
 
+var num = 1234567.89;
+num = num.toLocaleString("th-TH");
+console.log(num);
 
-// What we have
 // {"_id":"5d7a0998002b646756cae26c",
 // "name":"Garmin vívosport",
 // "image_url":"https://fs.chomchob.com/file/image?path=/admin/upload/2018-02-13/f8c6966e-f5b9-4452-9b6e-4e26608e3d18",
@@ -34,15 +35,7 @@ for (var i=0;i<click1.length;i++){
 // "updatedAt":"2019-09-12T09:02:16.589Z",
 // "__v":0}
 
-// What we need
-// Bg
-// Preview aka picture
-// Detail : Rating(star review) - Price - brand_pic - brand_name
-// ====
-// _id,name,image_url,price,review[0],review[1],brand_info[2]
-
 const URL = `https://cc-mock-api.herokuapp.com/product`;
-// let count = 0;
 
 function App() {
 
@@ -54,7 +47,6 @@ function App() {
     price: "",
     review: "",
     brand_info: "",
-    // review[0],review[1],brand_info[3]
   }]);
 
   useEffect(() => {
@@ -89,6 +81,7 @@ function App() {
 
       <div className="Header">
         <div className="rectangle1">
+
           <div className="Logo">
             <img src={logo} alt="logo"/>
             <d>LOGO!</d>
@@ -102,24 +95,30 @@ function App() {
             <b5>Kid</b5>
             <b6>Accessories</b6>
           </div>
+
         </div>
       </div>
 
+
       <div className="Context">
+
         <c>Products ({List.length})</c>
+
         <div className="list" href="https://www.chomchob.com/">
           {List.map((product) => (
             <Product key={product._id} product={product}></Product>
           ))}
-          
         </div>
+
       </div>
+
 
       <div className="Footer">
         <div className="rectangle2">
           <a>Copyright © 2021 ChomCHOB. All Rights Reserved.</a>
         </div>
       </div>
+
 
     </div>
   );

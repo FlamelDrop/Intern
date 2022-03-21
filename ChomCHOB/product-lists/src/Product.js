@@ -3,12 +3,12 @@ import './App.css';
 import full from './icons/star-full.svg';
 import empty from './icons/star.svg';
 
-// const formatToCurrency = amount => {
-//     return "$" + amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,");
-//   };
-
 export default function InfoFigure(props) {
     const { product } = props;
+    
+    var num = product.price;
+    var commas = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    console.log(commas);
 
     return (
         <div key={product._id} className="card">
@@ -20,9 +20,7 @@ export default function InfoFigure(props) {
                     <f className="card-name">{product.name}</f>
                 </pref>
                 <g className="card-pricetag">Price</g>
-                <h className="card-price">
-                    ฿{product.price}
-                </h>
+                <h className="card-price">฿{commas}</h>
                 <i className="card-review">Reviews ({product.review.number} reviews)</i>
                 <plie className="precard-rating">
                     <j>
